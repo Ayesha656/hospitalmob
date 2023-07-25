@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1019918013091",
+    "project_id": "hospitalmob-f482d",
+    "storage_bucket": "hospitalmob-f482d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1019918013091:android:7cf778571a8028c518e516",
+        "android_client_info": {
+          "package_name": "com.asad.hospitalmob"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1019918013091-t3rfj2hfdg9884qcmmtfd2f6b719e5eg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKH7gFuvO7drmQw5M8B_-_pV9AywqRe5Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1019918013091-t3rfj2hfdg9884qcmmtfd2f6b719e5eg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
