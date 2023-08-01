@@ -11,6 +11,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -29,8 +30,14 @@ public class doctorsignup extends AppCompatActivity {
         EditText ed1 = findViewById(R.id.doctoremail);
         EditText ed2 = findViewById(R.id.doctorpassword);
         Button btn = findViewById(R.id.signup);
-
-
+        TextView t_shift = findViewById(R.id.shifttosigin);
+        t_shift.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(doctorsignup.this, doctorinformation.class);
+                startActivity(i);
+            }
+        });
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -51,6 +58,8 @@ public class doctorsignup extends AppCompatActivity {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 Toast.makeText(doctorsignup.this, "user registered", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(doctorsignup.this, doctorlogin.class);
+                startActivity(i);
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
