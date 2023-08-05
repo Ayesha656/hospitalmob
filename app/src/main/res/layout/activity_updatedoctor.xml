@@ -4,13 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".doctorinformation">
-
+    tools:context=".updatedoctor">
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Doctor Information"
+        android:text="Doctor Update"
         android:textSize="32dp"
         android:textStyle="bold"
         android:textColor="@color/blue"
@@ -22,7 +21,7 @@
         app:layout_constraintVertical_bias="0.087" />
 
     <EditText
-        android:id="@+id/doctorname"
+        android:id="@+id/updatename"
         android:layout_width="356dp"
         android:layout_height="54dp"
         android:ems="10"
@@ -36,7 +35,7 @@
         app:layout_constraintVertical_bias="0.282" />
 
     <EditText
-        android:id="@+id/doctoremail"
+        android:id="@+id/updateemail"
         android:layout_width="356dp"
         android:layout_height="54dp"
         android:ems="10"
@@ -50,7 +49,7 @@
         app:layout_constraintVertical_bias="0.385" />
 
     <EditText
-        android:id="@+id/doctospecialization"
+        android:id="@+id/updatespecialization"
         android:layout_width="356dp"
         android:layout_height="54dp"
         android:ems="10"
@@ -63,41 +62,16 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.499" />
 
-    <EditText
-        android:id="@+id/dob"
-        android:layout_width="356dp"
-        android:layout_height="54dp"
-        android:ems="10"
-        android:hint="DATE OF BIRTH"
-        android:inputType="text"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.49"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.61" />
-
     <Button
-        android:id="@+id/register"
+        android:id="@+id/update"
         android:layout_width="220dp"
         android:layout_height="68dp"
-        android:text="Next"
+        android:text="Update"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.387"
+        app:layout_constraintHorizontal_bias="0.418"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.8" />
+        app:layout_constraintVertical_bias="0.627" />
 
-    <Button
-        android:id="@+id/shiftupdate"
-        android:layout_width="220dp"
-        android:layout_height="68dp"
-        android:text="Sfift To Update"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.387"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.927" />
 </androidx.constraintlayout.widget.ConstraintLayout>

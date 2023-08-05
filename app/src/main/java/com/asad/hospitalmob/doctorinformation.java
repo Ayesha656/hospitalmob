@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -31,8 +32,20 @@ public class doctorinformation extends AppCompatActivity {
         EditText d_doctospecialization = findViewById(R.id.doctospecialization);
         EditText d_dob = findViewById(R.id.dob);
         Button d_register = findViewById(R.id.register);
-        
-        
+        @SuppressLint({"MissingInflatedId", "LocalSuppress"})
+        Button shift = findViewById(R.id.shiftupdate);
+
+
+
+        shift.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent i = new Intent(doctorinformation.this, updatedoctor.class);
+                startActivity(i);
+            }
+        });
+
+
         d_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

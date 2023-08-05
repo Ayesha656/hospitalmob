@@ -13,6 +13,9 @@
         android:theme="@style/Theme.Hospitalmob"
         tools:targetApi="31">
         <activity
+            android:name=".updatedoctor"
+            android:exported="false" />
+        <activity
             android:name=".doctorinformation"
             android:exported="false" />
         <activity

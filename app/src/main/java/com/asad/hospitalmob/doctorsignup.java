@@ -23,6 +23,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class doctorsignup extends AppCompatActivity {
     FirebaseAuth mAuth;
     @SuppressLint("MissingInflatedId")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
